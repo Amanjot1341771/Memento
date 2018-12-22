@@ -44,38 +44,38 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/action_bold"
-                android:layout_width="@dimen/tool_size"
-                android:layout_height="@dimen/tool_size"
-                android:background="@drawable/tool"
-                android:clickable="true"
-                android:scaleType="center"
-                android:contentDescription="@string/tool"
-                app:srcCompat="@drawable/ic_bold" />
-
-            <ImageView
                 android:id="@+id/action_italic"
                 android:layout_width="@dimen/tool_size"
                 android:layout_height="@dimen/tool_size"
-                android:background="@drawable/tool"
-                android:contentDescription="@string/tool"
-                android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
-                android:scaleType="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/tool"
                 android:clickable="true"
+                android:contentDescription="@string/tool"
+                android:scaleType="center"
                 app:srcCompat="@drawable/ic_italic" />
 
             <ImageView
                 android:id="@+id/action_underline"
                 android:layout_width="@dimen/tool_size"
                 android:layout_height="@dimen/tool_size"
-                android:background="@drawable/tool"
-                android:scaleType="center"
-                android:contentDescription="@string/tool"
-                android:clickable="true"
-                android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/tool"
+                android:clickable="true"
+                android:contentDescription="@string/tool"
+                android:scaleType="center"
                 app:srcCompat="@drawable/ic_underline" />
+
+            <ImageView
+                android:id="@+id/action_bold"
+                android:layout_width="@dimen/tool_size"
+                android:layout_height="@dimen/tool_size"
+                android:background="@drawable/tool"
+                android:clickable="true"
+                android:contentDescription="@string/tool"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_bold" />
 
         </LinearLayout>
     </HorizontalScrollView>

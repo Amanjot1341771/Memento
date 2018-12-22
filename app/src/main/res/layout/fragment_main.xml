@@ -13,46 +13,45 @@
         android:visibility="gone"
         android:scrollbars="vertical" />
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_gravity="center"
-        android:visibility="gone"
-        android:gravity="center"
+        android:gravity="left"
         android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="110dp"
             android:layout_height="110dp"
-            app:srcCompat="@drawable/ic_empty_categories"
+            android:contentDescription="@string/empty"
             android:scaleType="center"
-            tools:ignore="MissingPrefix"
-            android:contentDescription="@string/empty"/>
+            app:srcCompat="@drawable/ic_empty_categories"
+            tools:ignore="MissingPrefix" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="@dimen/medium_text"
             android:layout_marginTop="16dp"
-            android:text="@string/no_categories"/>
+            android:text="@string/no_categories"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="@string/no_categories_desc"
             android:textColor="@color/main_text"
-            android:textSize="@dimen/smaller_text"
-            android:text="@string/no_categories_desc"/>
+            android:textSize="@dimen/smaller_text" />
     </LinearLayout>
 
     <github.yaa110.memento.widget.Fab
